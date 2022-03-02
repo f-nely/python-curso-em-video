@@ -1,11 +1,10 @@
-import random
+from random import choice
 
-n1 = input('Primeiro aluno: ')
-n2 = input('Segundo aluno: ')
-n3 = input('Terceiro aluno: ')
-n4 = input('Quarto aluno: ')
+alunos = []
+for i in range(0, 4):
+    aluno = str(input('Digite o nome do aluno: '))
+    alunos.append(aluno)
 
-lista = [n1, n2, n3, n4]
-escolhido = random.choice(lista)
+escolhido = choice(alunos)
 
-print(f'O aluno escolhido foi {escolhido}')
+print(f'O aluno escolhido foi {escolhido}!')
