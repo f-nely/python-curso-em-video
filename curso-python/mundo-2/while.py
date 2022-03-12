@@ -19,10 +19,11 @@ qtd_par = qtd_impar = 0
 n = 1
 while n != 0:
     n = int(input('Digite um valor: '))
-    if n != 0:
-        if n % 2 == 0:
-            qtd_par += 1
-        else:
-            qtd_impar += 1
+    if n == 0:
+        continue
+    if n % 2 == 0:
+        qtd_par += 1
+    else:
+        qtd_impar += 1
 print(f'Você digitou {qtd_par} números pares e {qtd_impar} números ímpares!')
 print('ACABOU')
